@@ -1,0 +1,41 @@
+import { Column, useTable } from "react-table";
+
+interface Props<T> {
+  columns: Column[];
+  data: T[];
+}
+export default function Table<RowT extends {}>({ columns, data }: Props<RowT>) {
+  // Use the state and functions returned from useTable to build your UI
+  const { getTableProps, getTableBodyProps, headerGroups, rows, prepareRow } =
+    useTable({
+      columns,
+      data,
+    });
+
+  // Render the UI for your table
+  return (
+    <table {...getTableProps()} className="table">
+      <thead>
+        {headerGroups.map((headerGroup) => (
+          <tr {...headerGroup.getHeaderGroupProps()}>
+            {headerGroup.headers.map((column) => (
+              <th {...column.getHeaderProps()}>{column.render("Header")}</th>
+            ))}
+          </tr>
+        ))}
+      </thead>
+      <tbody {...getTableBodyProps()}>
+        {rows.map((row, i) => {
+          prepareRow(row);
+          return (
+            <tr {...row.getRowProps()}>
+              {row.cells.map((cell) => {
+                return <td {...cell.getCellProps()}>{cell.render("Cell")}</td>;
+              })}
+            </tr>
+          );
+        })}
+      </tbody>
+    </table>
+  );
+}

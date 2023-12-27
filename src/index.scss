@@ -1,0 +1,25 @@
+@import "styles/bootstrap";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap");
+@import "bootstrap-icons/font/bootstrap-icons.css";
+
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  p {
+    margin-bottom: 0;
+  }
+  font-family: "Poppins", sans-serif !important;
+}

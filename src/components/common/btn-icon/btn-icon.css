@@ -1,0 +1,16 @@
+.btn-icon {
+  border-style: none;
+  border-radius: 50%;
+  background-color: inherit;
+}
+
+.icon-container {
+  border-radius: 50%;
+  height: 1.8em;
+  width: 1.8em;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.icon-container:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}

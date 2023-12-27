@@ -1,0 +1,7 @@
+.btn-bare-secondary {
+  color: var(--bs-secondary, gray);
+  &:hover {
+    color: var(--bs-white, white);
+    background-color: var(--bs-secondary, gray);
+  }
+}

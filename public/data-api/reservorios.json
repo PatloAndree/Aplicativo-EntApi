@@ -1,0 +1,37 @@
+{
+  "status": true,
+  "totalRegistros": 6,
+  "listaDatos": [
+    {
+      "id": "01",
+      "imei": "imei-01020120e193e",
+      "maximo": 35,
+      "minimo": 10,
+      "nivel": 16,
+      "volumen": 1230,
+      "bateria": 5,
+      "signal": 4
+    },
+    {
+      "id": "02",
+      "imei": "imei-1290e9130ef1",
+      "maximo": 40,
+      "minimo": 11,
+      "nivel": 15.3,
+      "volumen": 1103,
+      "bateria": 40,
+      "signal": 5
+    },
+    {
+      "id": "03",
+      "imei": "imei-09a03e8797b2",
+      "maximo": 34,
+      "minimo": 11,
+      "nivel": 35.6,
+      "volumen": 2340,
+      "bateria": 25,
+      "signal": 3
+    }
+  ],
+  "mensaje": ""
+}

@@ -1,0 +1,14 @@
+.ftco-section {
+    padding: 7em 0;
+    background: #1e197c;
+    height: 100vh; 
+}
+.heading-section {
+    font-size: 28px;
+    color: #fff;
+}
+.container-icono svg{
+    width: 75px;
+    height: 90px;
+    color: #fff;    
+} 
